@@ -1,7 +1,8 @@
 # FEND-Project-02
-## Personal blog project
+## About
+This is my personal blog project the OneTen Scholarship Program at Udacity. I'll use this document to keep track of project progress, and tasks.
 
-To-do
+## To-do
 1. mock up design for mobile, tablet and full screen version of blog
 2. generate HTML for basic elements
 3. generate CSS for each page
