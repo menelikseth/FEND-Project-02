@@ -14,15 +14,32 @@ This is my personal blog project the OneTen Scholarship Program at Udacity. I'll
 
 The general pattern of the webpage should be as follows:
 
-- Blog Homepage
-    - Navbar
+- Blog Homepage: featured post, highlighted. 3-4 posts
+    - Header
+        - Blog title
+        - Navbar
+            - home
+            - about page
+            - archive page
+        - search field
+        - background image
+    - Sidebar (only visible on largest screen width)
+        - summary about blog
+        - social media snippets
     - Blog Post Card
         - Card
         - Image
         - Buttons
     - Footer
-Blog Post
+        - social media links
+        - copyright info
+        - link to top of page
+- Blog Post
     - Header
+    - Sidebar (only visible on largest screen width)
+        - post summary
+        - social media posts with matching hashtags
+    - post content
     - Author Info
         - Name
         - Title
@@ -33,3 +50,11 @@ Blog Post
         - Twitter
         - Facebook
         - LinkedIn
+    - Footer
+- Archive Page
+    - Header
+    - Sidebar (only visible on largest screen width)
+        - list of months that have posts
+    - content: list of posts
+    - pagination
+    - Footer
