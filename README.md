@@ -12,6 +12,8 @@ This is my personal blog project the OneTen Scholarship Program at Udacity. I'll
 
 ## From project rubric
 
+> (with some added features)
+
 The general pattern of the webpage should be as follows:
 
 - Blog Homepage: featured post, highlighted. 3-4 posts
