@@ -9,6 +9,7 @@ This is my personal blog project the OneTen Scholarship Program at Udacity. I'll
 4. validate HTML and css
 5. compare to rubric to make sure expectations are met and exceeded 
 6. find some creative commons graphics for blog elements
+7. use Udacity GPT to generate some blog posts instead of Lorep Ipsum
 
 ## From project rubric
 
