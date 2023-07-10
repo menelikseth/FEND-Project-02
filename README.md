@@ -54,6 +54,13 @@ The general pattern of the webpage should be as follows:
         - Facebook
         - LinkedIn
     - Footer
+- About Page
+    - Header
+    - Sidebar (only visible on largest screen width)
+        - current projects
+        - social media snippits
+    - content: about blog, about author
+    - Footer
 - Archive Page
     - Header
     - Sidebar (only visible on largest screen width)
