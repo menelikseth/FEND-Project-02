@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    place-items: center;
+    min-height: 100vh;
+}
+
+header {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+}
+nav ul li {
+    float: left;
+}
+
+#content {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+footer {
+    grid-column: 1;
+    grid-row: 3;
+}
