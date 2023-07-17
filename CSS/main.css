@@ -5,47 +5,116 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    place-items: center;
-    min-height: 100vh;
+    grid-template-rows: 15% 1fr 10%;
+    min-height: 95vh;
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 10px;
+    align-items: flex-start;
 }
 
 header {
     grid-column: 1;
     grid-row: 1;
     display: flex;
-    min-height: 100%;
-    min-width: 100%;
     flex-direction: column;
     align-items: center;
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 5px;
+    align-self: stretch;
+
 }
 
-nav{
+header h1 {
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
     min-width: 100%;
+    margin: 10px;
+    display: flex;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    align-self: flex-start;
+    display: flex;
 }
 
 nav ul li {
     margin: 2px;
-    float: left;
     border: black solid 1px;
     border-radius: 10px;
     width: 80px;
     text-align: center;
 }
 
+header form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+header input {
+    width: 80%;
+    box-sizing: border-box;
+}
+
 #content {
     grid-column: 1;
     grid-row: 2;
+    /* border: solid black 1px; */
+    /* border-radius: 15px; */
+    min-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
 }
 
+article {
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+article h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#featured {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: solid black 10px;
+}
 
 footer {
     grid-column: 1;
     grid-row: 3;
+    border: solid black 1px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+    align-self: stretch;
+    margin-bottom: 10px;
+}
+
+footer nav {
+    min-width: 10%;
+}
+
+.socials li {
+    width: 20px;
 }
