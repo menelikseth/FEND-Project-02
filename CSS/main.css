@@ -5,7 +5,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr 10%;
+    grid-template-rows: 120px 1fr 70px;
     min-height: 95vh;
     border: solid black 1px;
     border-radius: 15px;
@@ -23,6 +23,7 @@ header {
     border-radius: 15px;
     padding: 5px;
     align-self: stretch;
+    justify-content: space-evenly;
 
 }
 
@@ -54,18 +55,30 @@ nav ul li {
     text-align: center;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 header form {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
 }
 
 header input {
-    width: 80%;
+    width: 100%;
     box-sizing: border-box;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+header button {
+    border: 1px black solid;
+    border-radius: 10px;
 }
 
 #content {
@@ -92,6 +105,16 @@ article h2 {
     margin: 0;
 }
 
+article a {
+    margin: 2px;
+    border: black solid 1px;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
 #featured {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -116,5 +139,5 @@ footer nav {
 }
 
 .socials li {
-    width: 20px;
+    width: 40px;
 }
