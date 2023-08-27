@@ -4,7 +4,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 120px 1fr 70px;
     min-height: 95vh;
     border: solid black 1px;
@@ -14,37 +14,41 @@ body {
 }
 
 header {
-    grid-column: 1;
+    grid-column: span 2;
     grid-row: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items:  center;
     border: solid black 1px;
     border-radius: 15px;
     padding: 5px;
     align-self: stretch;
-    justify-content: space-evenly;
+    justify-items: baseline;
 
 }
 
 header h1 {
-    align-self: flex-end;
+    /*     align-self: flex-end;
+ */
     margin: 0;
     padding: 0;
+    min-width: 100%
 }
 
 nav {
-    min-width: 100%;
+    min-width: 40%;
     margin: 10px;
     display: flex;
+    align-self: flex-start;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    align-self: flex-start;
-    display: flex;
+/*     align-self: flex-start;
+ */    display: flex;
 }
 
 nav ul li {
@@ -60,13 +64,11 @@ nav a {
 }
 
 header form {
-    width: 100%;
+    flex-grow: 3;
     display: flex;
     justify-content: space-around;
-    margin-left: 10px;
-    margin-right: 10px;
-
-
+    margin: 10px;
+    align-self: flex-start;
 }
 
 header input {
@@ -82,14 +84,16 @@ header button {
 }
 
 #content {
-    grid-column: 1;
+    grid-column: span 2;
     grid-row: 2;
     /* border: solid black 1px; */
     /* border-radius: 15px; */
     min-width: 100%;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
     justify-self: center;
 }
 
@@ -98,6 +102,7 @@ article {
     border-radius: 15px;
     padding: 10px;
     margin-top: 10px;
+    width: 45%;
 }
 
 article h2 {
@@ -158,17 +163,19 @@ article a {
     margin-right: 10px;
 }
 
-.profile p{
+.profile p {
     margin: 0;
 }
+
 #featured {
     margin-top: 25px;
     margin-bottom: 25px;
     border: solid black 10px;
+    width: 100%;
 }
 
 footer {
-    grid-column: 1;
+    grid-column: span 2;
     grid-row: 3;
     border: solid black 1px;
     border-radius: 15px;
