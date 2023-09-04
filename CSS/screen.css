@@ -1,6 +1,5 @@
 #container {
     grid-template-columns: 3fr 1fr;
-    border: solid black 1px;
 }
 
 header {
@@ -22,7 +21,6 @@ nav {
 header form {
     width: unset;
     flex-grow: 2;
-    flex-direction: row;
     margin: 10px;
 }
 
@@ -50,7 +48,6 @@ aside {
     display: unset;
     grid-column: 2;
     grid-row: span 3;
-    /* display: none; */
     border: solid black 1px;
     border-radius: 15px;
     align-self: stretch;

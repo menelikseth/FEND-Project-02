@@ -1,6 +1,5 @@
 #container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 1fr 70px;
 }
 
 header {
@@ -34,6 +33,10 @@ header form {
     flex-wrap: wrap;
 }
 
+footer {
+    grid-column: span 2;
+}
+
 .post-card {
     width: 45%;
 }
@@ -45,10 +48,6 @@ header form {
 #featured h2,
 #featured p {
     margin-left: 30%;
-}
-
-footer {
-    grid-column: span 2;
 }
 
 aside {
