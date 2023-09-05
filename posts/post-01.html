@@ -20,22 +20,35 @@
                     <li><a href="../archive.html">Archive</a>
                 </ul>
             </nav>
-            <form action="">
+            <form action="self">
                 <input type="text" placeholder="Search..." name="search">
                 <button type="submit">Submit</button>
             </form>
         </header>
 
-        <section id="content">
+        <div id="content">
             <article>
                 <h2>H2: Sample Blog Post</h2>
 
+                <nav class="socials share">
+                    <ul>
+                        <li><a href="#">T</a>
+                        <li><a href="#">F</a>
+                        <li><a href="#">L</a>
+                        <li>[SHARE]
+                    </ul>
+                </nav>
+
                 <p>
-                    This blog post shows a few different types of content that is styled to achieve a consistent viewing
-                    experience.
+                    This blog post shows a few different types of content that is styled to achieve a <em
+                        class="underline">consistent viewing experience</em>.
                 </p>
 
-                <hr>
+                <div id="callout">
+                    <p>
+                        Duae sunt enim res quoque, ne tu verba solum putes.
+                    </p>
+                </div>
 
                 <p>
                     Lorem ipsum dolor sit amet,<a href="">consectetur adipiscing elit</a>. <strong>Negare non
@@ -75,7 +88,7 @@
                     legere, nec optare, sed sumere, contraria autem non fugere, sed quasi secernere.
                 </p>
 
-                <blockquote>
+                <blockquote class="code">
                     <code>
                     THIS IS A BLOCK of CODE
                 </code>
@@ -88,6 +101,11 @@
                 </p>
 
                 <h3>H3: Sub-heading</h3>
+
+                <figure>
+                    <img src="https://placehold.co/200x200" alt="alt text">
+                    <figcaption>Image caption</figcaption>
+                </figure>
 
                 <p>
                     Servari enim iustitia nisi a forti viro, nisi a sapiente non potest. Sed emolumenta communia esse
@@ -105,23 +123,31 @@
                 <ol>
                     <li>Qui autem esse poteris, nisi te amor ipse ceperit?
                     <li>Apud imperitos tum illa dicta sunt, aliquid etiam coronae datum;
-                    <li>Varietates autem iniurasque fortunae facile veteres philosophorum praeceptis instituta vita
+                    <li>Varietates autem iniurasque fortunae facile veteres philosophorum praeceptis instituta
+                        vita
                         superabat.
                 </ol>
 
+                <p>
+                    Servari enim iustitia nisi a forti viro, nisi a sapiente non potest. Sed emolumenta communia esse
+                    dicuntur, recte autem facta et peccata non habentur communia. Et hunc idem dico, inquieta sed ad
+                    virtutes et ad vitia nihil interesse.
+                </p>
             </article>
+
             <article class="profile">
                 <h2>Author's Name</h2>
                 <ul>
                     <li>Title
                     <li>Current company
                 </ul>
-                <img src="https://placebear.com/320/320" alt="placeholder for author's profile photo">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et dolore magna aliqua.</p>
+                <img src="https://placehold.co/320x320" alt="placeholder for author's profile photo">
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Negare non possum. Ergo adhuc, quantum
+                    equidem intellego, causa non videtur fuisse mutandi nominis. Ita relinquet duas, de quibus etiam
+                    atque etiam consideret. Quare, quoniam de primis naturae commodis satis dietum est nunc de maioribus
+                    consequentibusque videamus.</p>
             </article>
-        </section>
+        </div>
 
         <footer>
             <nav>
@@ -129,23 +155,26 @@
                     <li><a href="#">Top</a>
                 </ul>
             </nav>
-            <nav class="socials">
+
+            <nav class="socials follow">
                 <ul>
-                    <li>T
-                    <li>F
-                    <li>L
+                    <li> [FOLLOW]
+                    <li><a href="#">T</a>
+                    <li><a href="#">F</a>
+                    <li><a href="#">L</a>
                 </ul>
             </nav>
         </footer>
+
         <aside>
             <article>
-                <p>about blog</p>
+                <h2>Related Tweet</h2>
+                <img src="../assets/tweet-image.jpeg" alt="mock up tweet">
             </article>
+
             <article>
-                <p>twitter poste</p>
-            </article>
-            <article>
-                <p>instagram post</p>
+                <h2>Related Instagram Post</h2>
+                <img src="../assets/cb-instagram-post.png" alt="mock up instagram post">
             </article>
         </aside>
     </div>

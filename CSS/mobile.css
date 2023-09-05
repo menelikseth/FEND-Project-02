@@ -24,6 +24,13 @@ header form {
     flex-direction: column;
 }
 
+#callout {
+    border-radius: 5px;
+    background-image: url("https://placehold.co/500x150");
+    max-width: 500px;
+    min-height: 150px;
+}
+
 footer {
     grid-column: 1;
 }

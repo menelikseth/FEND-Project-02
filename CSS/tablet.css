@@ -33,6 +33,10 @@ header form {
     flex-wrap: wrap;
 }
 
+article figure {
+    float: right;
+}
+
 footer {
     grid-column: span 2;
 }
@@ -48,6 +52,13 @@ footer {
 #featured h2,
 #featured p {
     margin-left: 30%;
+}
+
+#callout {
+    border-radius: 5px;
+    background-image: url("https://placehold.co/800x250");
+    max-width: 800px;
+    min-height: 250px;
 }
 
 aside {

@@ -16,6 +16,8 @@ button {
     grid-template-rows: 120px 1fr 70px;
     min-height: 95vh;
     min-width: 300px;
+/*     border: solid black 1px;
+    border-radius: 15px; */
     padding: 10px;
     align-items: flex-start;
 }
@@ -37,15 +39,20 @@ header h1 {
     color: white;
 }
 
-nav ul {
-    display: flex;
-    flex-wrap:wrap;
-    list-style: none;
+nav {
     margin: 10px;
-    padding: 0;
+    display: flex;
 }
 
-nav li {
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+    display: flex;
+}
+
+nav ul li {
     margin: 2px;
     border: white solid 1px;
     background-color: white;
@@ -88,8 +95,7 @@ header button {
 }
 
 article {
-    border-top: solid purple 1px;
-    border-bottom: solid purple 1px;
+    border: solid black 1px;
     border-radius: 15px;
     padding: 10px;
     margin-top: 10px;
@@ -106,6 +112,10 @@ article h3 {
 .underline {
     font-style: normal;
     text-decoration-line: underline;
+}
+
+article hr {
+    border: solid #ccc 1px;
 }
 
 #callout {
@@ -168,33 +178,6 @@ article ul {
     list-style-type: circle;
 }
 
-.share ul {
-    margin: 0;
-    padding: 0;
-}
-
-.share li:last-child {
-    transform: translateX(20px);
-     background-color: unset;
-     border: none;
- }
- 
-.share ul li {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: black;
-    font-size: 1em;
-    font-weight: bold;
-    color: #c0c0c0;
-}
-
-.share li a {
-    text-decoration: none;
-    color: white;
-    background-color: unset;
-    border: unset;
-}
 .post-card a,
 #featured a {
     margin: 2px;
@@ -255,40 +238,40 @@ article ul {
 }
 
 #featured {
+    display: grid;
+    grid-template:
+        'a b'
+        'c b'
+        'd b';
     margin-top: 25px;
     margin-bottom: 25px;
     border: solid black 10px;
 }
 
-#featured {
-    background-image: url("https://placehold.co/250x150?text=featured\\n250x150");
+#featured h2 {
+    grid-area: a;
+    justify-self: start;
+}
+
+#featured p {
+    grid-area: c;
+    justify-self: start;
+}
+
+#featured a {
+    grid-area: d;
+    align-self: end;
+}
+
+#featured img {
+    grid-area: b;
+    justify-self: end;
+}
+
+.post-card, #featured {
+    background-image: url("https://placehold.co/150x150");
     background-repeat: no-repeat;
     background-position: right;
-}
-
-.post-card {
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.science
-{
-    background-image: url("https://placehold.co/150x150?text=science\\n150x150");
-}
-
-.coding
-{
-    background-image: url("https://placehold.co/150x150?text=coding\\n150x150");
-}
-
-.gaming
-{
-    background-image: url("https://placehold.co/150x150?text=gaming\\n150x150");
-}
-
-.cats
-{
-    background-image: url("https://placehold.co/150x150?text=cats\\n150x150");
 }
 
 footer {
@@ -302,22 +285,16 @@ footer {
     padding: 5px;
     align-self: stretch;
     margin-bottom: 10px;
-    min-height:100%;
 }
+
+
 
 footer nav {
     min-width: 10%;
     align-self: center;
 }
 
-.follow li:first-child {
-    transform: translateX(-30px);
-    color: white;
-    background-color: unset;
-    border: none;
-}
-
- .socials li {
+.socials li {
     display: flex;
     align-items: center;
     justify-content: center;

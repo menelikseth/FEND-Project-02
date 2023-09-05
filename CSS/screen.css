@@ -31,6 +31,10 @@ header form {
     flex-wrap: wrap;
 }
 
+article figure {
+    float: right;
+}
+
 .post-card {
     width: 45%;
 }
@@ -44,13 +48,38 @@ header form {
     margin-left: 30%;
 }
 
+#callout {
+    border-radius: 5px;
+    background-image: url("https://placehold.co/1000x250");
+    max-width: 1000px;
+    min-height: 250px;
+}
+
 aside {
     display: unset;
     grid-column: 2;
     grid-row: span 3;
-    border: solid black 1px;
+    border-left: solid purple 1px;
+    border-right: solid purple 1px;
     border-radius: 15px;
     align-self: stretch;
     padding: 5px;
     margin: 0 0 10px 10px;
+}
+
+aside article {
+    border: none;
+}
+
+aside img {
+max-width: 100%;
+border-radius: 15px;
+}
+
+aside > article h2 {
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 5px;
 }
