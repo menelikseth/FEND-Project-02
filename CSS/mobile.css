@@ -26,7 +26,7 @@ header form {
 
 #callout {
     border-radius: 5px;
-    background-image: url("https://placehold.co/500x150");
+    background-image: url("../posts/assets/500x150.png");
     max-width: 500px;
     min-height: 150px;
 }

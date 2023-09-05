@@ -50,7 +50,7 @@ article figure {
 
 #callout {
     border-radius: 5px;
-    background-image: url("https://placehold.co/1000x250");
+    background-image: url("../posts/assets/1000x250.png");
     max-width: 1000px;
     min-height: 250px;
 }
@@ -72,11 +72,11 @@ aside article {
 }
 
 aside img {
-max-width: 100%;
-border-radius: 15px;
+    max-width: 100%;
+    border-radius: 15px;
 }
 
-aside > article h2 {
+aside>article h2 {
     background-color: purple;
     color: white;
     border-radius: 15px;

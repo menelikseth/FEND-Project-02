@@ -56,7 +56,7 @@ footer {
 
 #callout {
     border-radius: 5px;
-    background-image: url("https://placehold.co/800x250");
+    background-image: url("../posts/assets/800x250.png");
     max-width: 800px;
     min-height: 250px;
 }
